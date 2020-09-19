@@ -1,0 +1,10 @@
+<main>
+    <mat-tab-group>
+        <mat-tab label="Cargar">
+            <app-cargar-persona (onCargar)="onCargar($event)"></app-cargar-persona>
+        </mat-tab>
+        <mat-tab label="Listado">
+            <app-listado-personas [titulo]="titulo" [listado]="listado"></app-listado-personas>
+        </mat-tab>
+    </mat-tab-group>  
+</main>
